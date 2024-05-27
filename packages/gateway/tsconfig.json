@@ -1,0 +1,18 @@
+{
+  "extends": "@blockful/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "isolatedModules": true,
+    "module": "CommonJS",
+    "skipLibCheck": true,
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

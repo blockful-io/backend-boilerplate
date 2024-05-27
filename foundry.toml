@@ -1,0 +1,15 @@
+[profile.default]
+src = "packages/contracts/src"
+test = "packages/contracts/test"
+script = "packages/contracts/script"
+out = "packages/contracts/out"
+libs = ["packages/contracts/lib"]
+remappings = ["forge-std=packages/contracts/lib/forge-std/src"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[rpc_endpoints]
+rpc_url = "${RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
