@@ -6,8 +6,8 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "start:db": "node ./dist/index.mjs",
-    "dev:db": "ENV_FILE=../../.env nodemon ./src/index.ts",
+    "start": "node ./dist/index.mjs",
+    "dev": "ENV_FILE=../../.env nodemon ./src/index.ts",
     "lint": "eslint . --ext .ts --fix",
     "build": "tsup-node"
   },

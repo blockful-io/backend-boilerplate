@@ -25,12 +25,11 @@
     "clean": "rm -rf cache out",
     "build": "forge build",
     "lint": "npm run lint:sol",
+    "start": "forge script script/Deploy.s.sol --rpc-url http://127.0.0.1:8545 --broadcast --vv",
     "lint:sol": "forge fmt --check && npx solhint {script,src,test}/**/*.sol",
     "test": "forge test",
-    "test:coverage": "forge coverage",
-    "test:coverage:report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage"
+    "test:coverage": "forge coverage"
   },
-  "main": "index.js",
   "directories": {
     "test": "test"
   },

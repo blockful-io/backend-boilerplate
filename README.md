@@ -34,39 +34,13 @@ docker-compose up db -d
 2. Deploy the contracts locally:
 
 ```bash
-npm run contracts start:db
+npm run contracts start
 ```
 
 3. Start the gateway
 
 ```bash
-npm run gateway dev:db
-```
-
-4. Request the domain properties through the client:
-
-```bash
-npm run client start
-```
-
-### Layer 2 setup
-
-1. Deploy the contracts locally:
-
-```bash
-npm run contracts start:arb
-```
-
-2. Start the gateway
-
-```bash
-npm run gateway dev:arb
-```
-
-3. Request the domain properties through the client:
-
-```bash
-npm run client start
+npm run gateway dev
 ```
 
 ## Deployment
@@ -79,22 +53,6 @@ It's required to have the [Railway CLI](https://docs.railway.app/guides/cli) ins
 4. Build project: `turbo build --filter=@blockful/gateway...`
 5. Test bundle locally: `npm run gateway start:db`
 6. Deploy the Gateway: `railway up`
-
-## Architecture
-
-### High Level
-
-#### Database
-
-<img width="733" alt="image" src="https://github.com/blockful-io/external-resolver/assets/29408363/02882939-dd54-4fa7-a268-a817403ddd2d">
-
-#### Layer 2
-
-<img width="735" alt="image" src="https://github.com/blockful-io/external-resolver/assets/29408363/48306561-59b4-4ab7-b920-b9a8f50cb325">
-
-## Conclusion
-
-This project seeks to significantly enhance the scalability and usability of the Ethereum Name Service through the development of a comprehensive reference codebase. By combining existing patterns and best practices, we aim to lower costs for users and drive increased adoption within the industry. We welcome collaboration and feedback from the community as we progress towards our goals.
 
 ## Contributing
 
